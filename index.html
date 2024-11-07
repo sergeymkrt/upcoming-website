@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coming Soon</title>
     <style>
-        /* Reset body and make it full viewport */
+        /* Reset and layout */
         * {
             margin: 0;
             padding: 0;
@@ -18,43 +18,58 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #fff;
-            color: #333;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .container {
             text-align: center;
+            padding: 2em;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 3.5em;
+            font-weight: bold;
             margin-bottom: 0.5em;
-            color: #000;
+            color: #fff;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
         p {
-            font-size: 1.2em;
-            color: #555;
+            font-size: 1.3em;
+            color: #ddd;
+            margin-bottom: 1.5em;
         }
 
         .footer {
             margin-top: 2em;
             font-size: 0.9em;
-            color: #999;
+            color: #bbb;
         }
 
-        /* Dark mode */
+        /* Dark mode adjustments */
         @media (prefers-color-scheme: dark) {
             body {
-                background-color: #111;
+                background: linear-gradient(135deg, #333, #111);
                 color: #eee;
             }
+
+            .container {
+                background: rgba(0, 0, 0, 0.6);
+                color: #ddd;
+            }
+
             h1 {
                 color: #fff;
             }
+
             p, .footer {
-                color: #ccc;
+                color: #bbb;
             }
         }
     </style>
@@ -62,7 +77,7 @@
 <body>
     <div class="container">
         <h1>We're Coming Soon</h1>
-        <p>We’ll be ready at the end of the year.</p>
+        <p>Our website is currently under development. We'll be launching at the end of the year.</p>
         <div class="footer">
             &copy; 2024 Vahan Mardirossian
         </div>
