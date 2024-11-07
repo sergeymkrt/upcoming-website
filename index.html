@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coming Soon</title>
+    <style>
+        /* Reset body and make it full viewport */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: #000;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .footer {
+            margin-top: 2em;
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+            h1 {
+                color: #fff;
+            }
+            p, .footer {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>We're Coming Soon</h1>
+        <p>We’ll be ready at the end of the year.</p>
+        <div class="footer">
+            &copy; 2024 Vahan Mardirossian
+        </div>
+    </div>
+</body>
+</html>
